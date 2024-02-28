@@ -106,13 +106,9 @@ $(function () {
         $(".wsus__chat_app").removeClass("show_small_info");
     });
 
-
     // mobile device change interface (Save message)
     $(".wsus__save_message_center").on("click", function () {
         $(".wsus__chat_app").addClass("show_small_chat");
     });
-
-
-
 
 });
