@@ -918,6 +918,10 @@ button {
     color: var(--colorLightBg);
 }
 
+.wsus__chat_area_footer form .file label {
+    cursor: pointer;
+}
+
 .wsus__chat_area_footer form textarea {
     width: 100%;
     border: none;
