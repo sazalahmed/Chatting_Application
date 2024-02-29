@@ -252,6 +252,10 @@ button {
     overflow: hidden;
 }
 
+.wsus__user_list_area {
+    position: relative;
+}
+
 .wsus__user_list_area .top,
 .wsus__save_message .top,
 .wsus__favourite_user .top {
@@ -287,7 +291,7 @@ button {
 }
 
 .favourite_user_slider {
-    padding: 0px 30px;
+    padding: 0px 60px 0px 57px;
 }
 
 .wsus__favourite_item {
@@ -299,11 +303,39 @@ button {
 .wsus__favourite_item .img {
     width: 55px;
     height: 55px;
+    position: relative;
     border-radius: 50%;
-    overflow: hidden;
     border: 2px solid var(--colorWhite);
     margin: 0 auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.wsus__favourite_item .img img {
+    width: 100 !important;
+    height: 100% !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__favourite_item .img span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wsus__favourite_item .img .active {
+    background: #21d221;
+}
+
+.wsus__favourite_item .img .inactive {
+    background: #d3d2d2;
 }
 
 .wsus__favourite_item p {
@@ -522,6 +554,7 @@ button {
     max-height: 480px;
     overflow: hidden;
     overflow-y: auto;
+    padding-bottom: 20px;
 }
 
 .wsus__user_list_area_height::-webkit-scrollbar {
@@ -1045,6 +1078,61 @@ button {
 
 .wsus__chat_app.show_info .wsus__chat_info {
     display: none;
+}
+
+.favourite_user_slider {
+    /* margin: 0; */
+}
+
+.nextArrow,
+.prevArrow {
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--colorLightBg);
+    line-height: 32px !important;
+    color: var(--colorPrimary);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.prevArrow {
+    right: auto;
+    left: 20px;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+
+.wsus__user_list_liading {
+    background: var(--colorLightBg);
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wsus__user_list_liading .spinner-border {
+    width: 20px;
+    height: 20px;
+    color: var(--colorPrimary) !important;
+}
+
+.spinner-border {
+    --bs-spinner-border-width: 2px;
 }
 
 /*================================
